@@ -88,6 +88,33 @@
             margin-top: 0.5rem;
         }
 
+        .header-link-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--faucyandark);
+            background-color: rgba(0, 163, 224, 0.08);
+            border: 1px solid rgba(0, 163, 224, 0.2);
+            padding: 4px 12px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .header-link-btn:hover {
+            background-color: var(--faucyandark);
+            color: white;
+            border-color: var(--faucyandark);
+            text-decoration: none;
+        }
+
+        .header-link-btn svg {
+            width: 14px;
+            height: 14px;
+        }
+
         .logo {
             max-height: 70px;
         }
@@ -270,7 +297,19 @@
         <div class="container">
             <div class="header-text">
                 <h1>Lehrstuhl für Informatik 6</h1>
-                <div class="header-subtitle">Datenmanagement</div>
+                <div class="header-subtitle">Datenmanagement
+
+                    <a href="https://www.cs6.tf.fau.de/" target="_blank" rel="noopener noreferrer"
+                        class="header-link-btn" aria-label="Webseite des Lehrstuhls für Informatik 6">
+                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                        Lehrstuhlwebseite
+                    </a>
+                </div>
             </div>
             <a href="https://www.fau.eu/"><img src="https://fau-cs6.github.io/KDD/fau-logo.svg" alt="FAU Logo"
                     class="logo"></a>
@@ -307,15 +346,17 @@
                         <strong>Kursübersicht:</strong>
                         <ul class="description-list">
                             <li><strong>Dozent:</strong> <a href="https://www.cs6.tf.fau.de/faudir/dominik-probst/"
-                                    style="color: inherit; text-decoration: none;">Dominik Probst, M.Sc.</a></li>
+                                    style="color: inherit; text-decoration: none;"
+                                    aria-label="Webseite von Dominik Probst">Dominik Probst, M.Sc.</a></li>
                             <li><strong>Umfang:</strong> 5 ECTS</li>
                             <li><strong>Turnus:</strong> Jedes Sommersemester</li>
                             <li><strong>Sprache:</strong> Englisch</li>
                             <li><strong>Struktur:</strong> Besteht aus Vorlesung und Übung</li>
-                            <li><strong>Zielgruppe:</strong> Informatik, International Information Systems, Data Science
+                            <li><strong>Studiengänge:</strong> u.a. Informatik, International Information Systems, Data
+                                Science
                             </li>
-                            <li><strong>Inhalt:</strong> Lehrt Grundlagen wie Frequent Pattern Analysis, Klassifikation,
-                                Clustering und Outlier Erkennung</li>
+                            <li><strong>Inhalt:</strong> Grundlagen der Datenwissenschaften. Behandelt unter anderem
+                                Frequent Pattern Analysis, Klassifikation, Clustering und Outlier Erkennung</li>
                         </ul>
                     </div>
                 </li>
