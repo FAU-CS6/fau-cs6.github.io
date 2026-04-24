@@ -1,4 +1,4 @@
-
+Sitemap: https://fau-cs6.github.io/sitemap.xml
 Sitemap: https://fau-cs6.github.io/KDD/sitemap.xml
 
 User-agent: *
