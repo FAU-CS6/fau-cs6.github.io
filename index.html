@@ -150,6 +150,10 @@
             line-height: 1.6;
         }
 
+        .section {
+            margin-bottom: 3rem;
+        }
+
         .section-header {
             border-bottom: 1px solid var(--faugray);
             padding-bottom: 0.25rem;
@@ -229,6 +233,7 @@
             padding: 15px 20px;
             border-left: 3px solid var(--faugray);
             border-radius: 0 4px 4px 0;
+            line-height: 1.5;
         }
 
         .description.show {
@@ -358,6 +363,43 @@
                             <li><strong>Inhalt:</strong> Grundlagen der Datenwissenschaften. Behandelt unter anderem
                                 Frequent Pattern Analysis, Klassifikation, Clustering und Outlier Erkennung</li>
                         </ul>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <h2>Projekte & Publikationen</h2>
+            </div>
+            <ul class="main-list">
+                <li>
+                    <div class="item-header">
+                        <span class="title">Graph-based QSS: A Graph-based Approach to Quantifying Semantic Similarity
+                            for Automated Linear SQL Grading</span>
+                        <a href="https://fau-cs6.github.io/sql-query-distance/" class="course-link" target="_blank">Live
+                            Demo</a>
+                        <a href="https://dl.gi.de/items/95d1dba7-1610-4232-9e2b-a8bc5af83513" class="course-link"
+                            target="_blank">Paper (BTW 2025)</a>
+                        <span class="toggle-btn open" title="Details ausblenden" aria-expanded="true">
+                            <span class="chevron"></span>
+                        </span>
+                    </div>
+                    <div class="description show">
+                        <p><strong>Autoren:</strong> Leo Köberlein, Dominik Probst, Richard Lenz</p>
+                        <p style="margin-top: 10px;"><strong>Abstract:</strong></p>
+                        <p>Determining the Quantified Semantic Similarity (QSS) between database queries is a critical
+                            challenge with broad applications, from query log analysis to automated SQL skill
+                            assessment. Traditional methods often rely solely on syntactic comparisons or are limited to
+                            checking for semantic equivalence. This paper introduces Graph-based QSS, a novel
+                            graph-based approach to measure the semantic dissimilarity between SQL queries. Queries are
+                            represented as nodes in an implicit graph, while the transitions between nodes are called
+                            edits, which are weighted by semantic dissimilarity. We employ shortest path algorithms to
+                            identify the lowest-cost edit sequence between two given queries, thereby defining a
+                            quantifiable measure of semantic distance. An empirical study of our prototype suggests that
+                            our method provides more accurate and comprehensible grading compared to existing
+                            techniques. Moreover, the results indicate that our approach comes close to the quality of
+                            manual grading, making it a robust tool for diverse database query comparison tasks.</p>
                     </div>
                 </li>
             </ul>
